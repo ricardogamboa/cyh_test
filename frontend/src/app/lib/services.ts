@@ -2,8 +2,7 @@ import useSWR, { mutate } from 'swr';
 
 import { LoginData, PlanData, PurchaseData } from '@/app/types/common.types';
 
-// TODO: Use env vars
-const host = 'http://localhost:3001';
+const host = process.env.NEXT_PUBLIC_BACKEND_URL;
 const fetcher = (url: string) => fetch(url).then(res => res.json());
 const fetcherWithHeader = (url: string, currentUser: string) => fetch(url,{headers:{'currentUser': currentUser}}).then(res => res.json());
 
