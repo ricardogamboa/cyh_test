@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Basic Plan",
+        "price": 200.00,
+        "steps": [
+            {"name": "Consultation", "order": 1},
+            {"name": "Session 1", "order": 2}
+        ]
+    },
+    {
+        "name": "Standard Plan",
+        "price": 400.00,
+        "steps": [
+            {"name": "Consultation", "order": 1},
+            {"name": "Session 1", "order": 2},
+            {"name": "Session 2", "order": 3},
+            {"name": "Session 3", "order": 4}
+        ]
+    },
+    {
+        "name": "Premium Plan",
+        "price": 600.00,
+        "steps": [
+            {"name": "Consultation", "order": 1},
+            {"name": "Session 1", "order": 2},
+            {"name": "Session 2", "order": 3},
+            {"name": "Session 3", "order": 4},
+            {"name": "Session 4", "order": 5},
+            {"name": "Session 5", "order": 6}
+    ]
+}
+]
