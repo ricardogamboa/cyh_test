@@ -10,7 +10,7 @@ import { PORT, API_URL } from './config.js';
 const app: Express = express();
 const port = PORT;
 
-const allowedOrigins = [API_URL];
+const allowedOrigins = [API_URL as string];
 const options: cors.CorsOptions = {
   origin: allowedOrigins
 }
