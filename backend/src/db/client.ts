@@ -1,7 +1,9 @@
 import { Sequelize } from 'sequelize';
 
-// TODO use env vars
-const sequelize = new Sequelize('postgres://postgres:pass@127.0.0.1:5432/cyh');
+import { DB_URL } from './../config.js';
+
+
+const sequelize = new Sequelize(DB_URL as string);
 
 try {
   await sequelize.authenticate();

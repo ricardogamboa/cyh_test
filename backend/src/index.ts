@@ -5,11 +5,12 @@ import cors from 'cors';
 import routes from './routes/index.js';
 import sequelize from './db/client.js';
 import { plantSeeds } from './db/init.js';
+import { PORT, API_URL } from './config.js';
 
 const app: Express = express();
-const port = 3001;
+const port = PORT;
 
-const allowedOrigins = ['http://localhost:3000'];
+const allowedOrigins = [API_URL];
 const options: cors.CorsOptions = {
   origin: allowedOrigins
 }
