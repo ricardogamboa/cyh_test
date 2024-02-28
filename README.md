@@ -6,12 +6,14 @@
 2. Install Docker Compose
 3. run `docker compose up`. This will boot the Postgres database container.
 4. In another terminal go to `/backend`
-5. Run `npm install`.
-6. Run `npm run dev`. This start the backend server.
-7. In another terminal go to `/frontend`
-8. Run `npm install`.
-9. Run `npm run dev`. This start the frontend server.
-10. You can now access `http://localhost:3000/`
+5. Rename `.env.demo` as `.env`.
+6. Run `npm install`.
+7. Run `npm run dev`. This start the backend server.
+8. In another terminal go to `/frontend`
+9. Rename `.env.local.demo` as `.env.local`.
+10. Run `npm install`.
+11. Run `npm run dev`. This start the frontend server.
+12. You can now access `http://localhost:3000/`
 
 ## TODO:
 
